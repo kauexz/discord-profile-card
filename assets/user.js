@@ -1,5 +1,5 @@
 window.onload = function () {
-   fetch("https://api.lanyard.rest/v1/users/348321064738095104")
+   fetch("https://api.lanyard.rest/v1/users/348321064738095104") // coloque seu id aqui
       .then((response) => response.json())
       .then((w) => {
          const info = w.data.discord_user;
