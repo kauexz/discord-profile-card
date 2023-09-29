@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <script src="assets/user.js"></script>
+    <script src="assets/title.js"></script>
+    <link href="assets/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="https://cdn.discordapp.com/emojis/1129852573277499393.png?size=96&quality=lossless">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <script>
+    function audioPlay() {
+      var audio = document.getElementById("audio");
+      audio.volume = 1.0;
+      audio.currentTime = 0;
+      audio.play();
+    }
+  </script>
+
+  <audio loop preload="auto" id="audio">
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <input type="checkbox" autocomplete="off" id="overlay-toggle">
+  <div class="overlay fullscreen">
+    <label for="overlay-toggle" onclick="audioPlay();">
+      <span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">Entrar</span>
+    </label>
+  </div>
+
+  <body>
+    <div class="container">
+      <img class="profile-img">
+      <div class="name"></div>
+      <div class="description"></div>
+      <div class="badges">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/png2/balance.png" width="23" height="23">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/png2/activedev.png" width="23" height="23">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/png2/pig.png" width="23" height="23">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/png2/nitro.png" width="23" height="23">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/png2/boosts/boost8.png" width="23" height="23">
+        <img src="https://raw.githubusercontent.com/kauexz/badges/main/png2/username.png" width="23" height="23">
+      </div>
+
+      <div class="social-icons">
+        <div class="social-icon">
+          <a href="https://twitter.com/kauemolinw" target="_blank">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://instagram.com/kauexz" target="_blank">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://open.spotify.com/user/31lxypemjuwaxnyjiqvtiq6olepy" target="_blank">
+            <i class="bx bxl-spotify"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
